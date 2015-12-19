@@ -2,7 +2,7 @@
 /**
  * Plugin Name:       My Damn Wordpress Functionality Plugin
  * Plugin URI:        https://github.com/jonathanbell/my-damn-wordpress-functionality-plugin
- * Description:       General functionality for Wordpress sites.
+ * Description:       General functionality for my (and your?) Wordpress sites.
  * Version:           0.0.1-alpha
  * Author:            Jonathan Bell
  * Author URI:        http://30.jonathanbell.ca
