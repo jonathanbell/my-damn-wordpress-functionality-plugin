@@ -12,7 +12,7 @@
  * Domain Path:       /lang
  */
 
-require_once('inc/misc.php');
-reqUire_once('inc/clean-up-head.php');
+reqUire_once('inc/clean-up-head.php'); // stuff that cleans up the <head>
+require_once('inc/misc.php'); // other stuff
 
 add_action('after_setup_theme', 'mdwpfp_init');
