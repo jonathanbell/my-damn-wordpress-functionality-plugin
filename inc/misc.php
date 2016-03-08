@@ -8,7 +8,7 @@ function wp_embed_handler_jsfiddle($matches, $attr, $url, $rawattr) {
     esc_attr($matches[2])
   );
 
-  return apply_filters('embed_jsfiddle', $embed, $matches, $attr, $url, $rawattr);
+  return apply_filters('wp_embed_handler_jsfiddle', $embed, $matches, $attr, $url, $rawattr);
 
 } // wp_embed_handler_jsfiddle
 
