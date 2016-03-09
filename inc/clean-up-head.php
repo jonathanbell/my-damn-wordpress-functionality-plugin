@@ -43,7 +43,7 @@ function mdwpfp_filter_ptags_on_images($content){
 	return preg_replace('/<p>\s*(<a .*>)?\s*(<img .* \/>)\s*(<\/a>)?\s*<\/p>/iU', '\1\2\3', $content);
 }
 
-function mdwpfp_init() {
+function mdwpfp_init_cleanup_head() {
 
   // launching operation cleanup
   add_action('init', 'mdwpfp_head_cleanup');

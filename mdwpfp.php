@@ -15,5 +15,5 @@
 require_once('inc/clean-up-head.php'); // stuff that cleans up the <head>
 require_once('inc/misc.php'); // other stuff
 
-add_action('after_setup_theme', 'mdwpfp_init');
+add_action('after_setup_theme', 'mdwpfp_init_cleanup_head');
 add_action('init', 'mdwpbp_misc');
