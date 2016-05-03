@@ -1,6 +1,8 @@
 <?php
 
 function mdwpfp_head_cleanup() {
+  // remove canonical link
+  remove_action('wp_head', 'rel_canonical');
   // remove WP emoji scripts and css
   remove_action('wp_head', 'print_emoji_detection_script', 7);
   remove_action('wp_print_styles', 'print_emoji_styles');
