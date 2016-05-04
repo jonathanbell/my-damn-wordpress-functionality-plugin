@@ -12,8 +12,10 @@
  * Domain Path:       /lang
  */
 
-require_once('inc/markup-cleanup.php'); // stuff that cleans up the <head>
-require_once('inc/misc.php'); // other stuff
+require_once('inc/markup-cleanup.php');
+require_once('inc/move-js.php');
+require_once('inc/misc.php');
 
 add_action('after_setup_theme', 'mdwpfp_init_markup_cleanup');
+add_action('wp_enqueue_scripts', 'mdwpbp_move_js', 999);
 add_action('init', 'mdwpbp_misc');
