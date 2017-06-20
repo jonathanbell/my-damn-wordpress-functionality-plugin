@@ -1,19 +1,23 @@
 <?php
 
-function mdwpbp_misc() {
-  // add extra inline embed copy/paste links (in the editor)
+/**
+ * Add extra oEmbed providers via thier own APIs via wp_oembed_add_provider().
+ */
+function mdwpbp_oembed() {
   wp_oembed_add_provider('http://codepen.io/*/pen/*', 'http://codepen.io/api/oembed', false);
-  wp_oembed_add_provider('#http://(www\.)?vimeo\.com/.*#i', 'http://vimeo.com/api/oembed.{format}', true);
 }
 
-// add JSFiddle auto embeds
+/**
+ * Add JSFiddle auto oEmbeds.
+ * JSFiddle does not have an oEmbed API, so we must write some custom code using wp_embed_register_handler().
+ */
 class JSFiddle_oEmbed {
 
   public function __construct() {
     add_action('init', array($this, 'setup_handler'));
   }
 
-  public function result($url){
+  public function result($url) {
     $url = $url[0];
     $height = '500';
     $width = '100%';
@@ -36,5 +40,6 @@ class JSFiddle_oEmbed {
     wp_embed_register_handler('jsfiddle', '#https?://jsfiddle.net/.*#i', array($this, 'result'));
   }
 
-} // class JSFiddle_oEmbed
+}
+// Create a new JSFiddle_oEmbed object.
 $jsfiddle_oembed = new JSFiddle_oEmbed();
