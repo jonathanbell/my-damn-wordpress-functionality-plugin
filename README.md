@@ -1,6 +1,8 @@
 My Damn Wordpress Functionality Plugin
 ======================================
 
+[![Tested on WordPress 4.8](https://img.shields.io/badge/wordpress-4.8%20tested-green.svg?style=flat-square)]()
+
 ## What This Plugin Does
 
 ### Add oEmbed Providers
