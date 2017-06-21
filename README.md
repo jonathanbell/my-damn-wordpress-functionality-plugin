@@ -30,8 +30,8 @@ Removes these things from the `<head>` of your pages:
 - WP version
 - WP emoji scripts and CSS
 - WP s.w.org dns-prefetch link
-- WP version from CSS (query string)
-- WP version from scripts
+- WP version from CSS (query string since WP v4)
+- WP version from scripts (query string since WP v4)
 
 More tidying up outside of the `<head>`:
 
