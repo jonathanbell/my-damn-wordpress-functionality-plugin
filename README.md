@@ -33,13 +33,12 @@ Removes these things from the `<head>` of your pages:
 - WP version from CSS
 - WP version from scripts
 
-Removes these things from your sites's RSS feed:
+More tidying up outside of the `<head>`:
 
-- WP version
-
-Also:
-
-- Removes the `<p>` tags that Wordpress tends to place around `<img>` tags.
+- Removes WP version from the RSS feed
+- Removes the `<p>` tags that Wordpress tends to place around `<img>` tags
+- Removes the injected CSS styling for the recent comments widget.
+- Removes the injected CSS for the default WP photo gallery.
 
 ### Move JavaScript to the Bottom of the Page
 
