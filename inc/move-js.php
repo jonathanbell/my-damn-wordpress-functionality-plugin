@@ -24,10 +24,24 @@ function mdwpfp_move_jquery_into_footer($wp_scripts) {
 add_action('wp_default_scripts', 'mdwpfp_move_jquery_into_footer');
 
 // Remove wp-embed.min.js
+// Borrowed from the Disable Embeds Plugin:
+// https://wordpress.org/plugins/disable-embeds/
 function mdwpfp_remove_wp_embed() {
-  wp_deregister_script('wp-embed');
+
+  // Remove the REST API endpoint.
+  remove_action('rest_api_init', 'wp_oembed_register_route');
+
+  // Turn off oEmbed auto discovery.
+  remove_filter('oembed_dataparse', 'wp_filter_oembed_result', 10);
+
+  // Remove oEmbed discovery links.
+  remove_action('wp_head', 'wp_oembed_add_discovery_links');
+
+  // Remove oEmbed-specific JavaScript from the front-end and back-end.
+  remove_action('wp_head', 'wp_oembed_add_host_js');
+
 }
-add_action('wp_footer', 'mdwpfp_remove_wp_embed');
+add_action('init', 'mdwpfp_remove_wp_embed', PHP_INT_MAX - 1);
 
 /**
  * Move the damn JavaScripts to the bottom of the damn page.

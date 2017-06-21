@@ -18,7 +18,7 @@ To add oEmbed support for GitHub or GitHub Gists, checkout [this plugin](https:/
 
 Removes these things from the `<head>` of your pages:
 
-- Canonical link 
+- Canonical link
 - Edit URI link
 - Windows live writer link
 - WP shortlink
@@ -26,18 +26,18 @@ Removes these things from the `<head>` of your pages:
 - Start link
 - Adjacent posts link
 - Previous link
-- WP JSON API link (does not remove the actual REST API, just the link pointing to it inside `<head>`)
+- WP JSON API link (does not remove the entire JS REST API, just the link pointing to it inside on the front-end inside `<head>` AND oEmbed discovery)
 - WP version
 - WP emoji scripts and CSS
 - WP s.w.org dns-prefetch link
 - WP version from CSS
 - WP version from scripts
 
-Removes these things from your sites's RSS feed: 
+Removes these things from your sites's RSS feed:
 
 - WP version
 
-Also: 
+Also:
 
 - Removes the `<p>` tags that Wordpress tends to place around `<img>` tags.
 
@@ -54,7 +54,7 @@ My Damn Wordpress Functionality Plugin will also remove:
 
 ## Why This Plugin?
 
-My Damn Wordpress Functionality Plugin is in use on my own site and provides me with the tweaks to WordPress that I like. Feel free to clone this plugin and use it on your own site. Also, pull requests are welcome. 
+My Damn Wordpress Functionality Plugin is in use on my own site and provides me with the tweaks to WordPress that I like. Feel free to clone this plugin and use it on your own site. Also, pull requests are welcome.
 
 ## Inspiration
 
