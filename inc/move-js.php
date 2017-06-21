@@ -36,14 +36,14 @@ function mdwpbp_move_js() {
 
   // Don't echo the scripts in the <head>.
   remove_action('wp_head', 'wp_print_scripts');
-  remove_action('wp_head', 'wp_print_head_scripts');
-  remove_action('wp_head', 'wp_enqueue_scripts');
-  
-  // Print the <head> scripts in the footer instead, next to the closing <body> tag. 
+  remove_action('wp_head', 'wp_print_head_scripts', 9);
+  remove_action('wp_head', 'wp_enqueue_scripts', 1);
+
+  // Print the <head> scripts in the footer instead, next to the closing <body> tag.
   // Give add_action() a third param if you want to prioritize:
   // https://developer.wordpress.org/reference/functions/add_action/
-  add_action('wp_footer', 'wp_print_scripts');
-  add_action('wp_footer', 'wp_print_head_scripts');
-  add_action('wp_footer', 'wp_enqueue_scripts');
+  add_action('wp_footer', 'wp_print_scripts', 5);
+  add_action('wp_footer', 'wp_enqueue_scripts', 5);
+  add_action('wp_footer', 'wp_print_head_scripts', 5);
 
 }
