@@ -61,5 +61,5 @@ My Damn Wordpress Functionality Plugin is in use on my own site and provides me 
 Inspired by these cats:
 
 - [https://css-tricks.com/wordpress-functionality-plugins/](https://css-tricks.com/wordpress-functionality-plugins/)
-- ["Theme Plugins"](http://www.smashingmagazine.com/2011/09/how-to-create-a-wordpress-plugin/)
+- [Smashing Magazine, "Theme Plugins"](http://www.smashingmagazine.com/2011/09/how-to-create-a-wordpress-plugin/)
 - [Bones](https://themble.com/bones/)
