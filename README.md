@@ -51,6 +51,13 @@ My Damn Wordpress Functionality Plugin will also remove:
 - jQuery Migrate (One less HTTP connection to make). :smile:
 - [wp-embed.js](https://wordpress.stackexchange.com/questions/211701/what-does-wp-embed-min-js-do-in-wordpress-4-4)
 
+## Installation
+
+1. [Download the latest release.](https://github.com/jonathanbell/my-damn-wordpress-functionality-plugin/archive/master.zip)
+1. Go to `/wp-admin/plugin-install.php` on your site and click the "Upload Plugin" button.
+1. Click "Choose File" and select the `.zip` file from step one.
+1. Click "Install Now" and then "Activate Plugin".
+
 ## Why This Plugin?
 
 My Damn Wordpress Functionality Plugin is in use on my own site and provides me with the tweaks to WordPress that I like. Feel free to clone this plugin and use it on your own site. Also, pull requests are welcome.
